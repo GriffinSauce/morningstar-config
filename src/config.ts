@@ -10,27 +10,17 @@ import preset from "./preset"
 import Config from "./types/Config"
 import Toggle from "./types/Toggle"
 
-const ampChannels = {
-  clean: programChange({
+const ampChannel = (program: number) =>
+  programChange({
     channel: 1,
     program: 0,
-  }),
-  crunch: programChange({
-    channel: 1,
-    program: 1,
-  }),
-  rhythm: programChange({
-    channel: 1,
-    program: 2,
-  }),
-  heavy: programChange({
-    channel: 1,
-    program: 3,
-  }),
-  lead: programChange({
-    channel: 1,
-    program: 4,
-  }),
+  })
+const ampChannels = {
+  clean: ampChannel(0),
+  crunch: ampChannel(1),
+  rhythm: ampChannel(2),
+  heavy: ampChannel(3),
+  lead: ampChannel(4),
 }
 
 const hxStomp = {
@@ -59,54 +49,32 @@ const loops = {
   }),
 }
 
+const presetBaseMessages = [
+  clearGlobalPresetToggles(),
+  loops.off,
+  togglePreset(),
+  hxStomp.snap1,
+]
 const presets = {
   clean: preset({
     name: "Clean",
-    messages: [
-      clearGlobalPresetToggles(),
-      loops.off,
-      togglePreset(),
-      ampChannels.clean,
-      hxStomp.snap1,
-    ],
+    messages: [...presetBaseMessages, ampChannels.clean],
   }),
   crunch: preset({
     name: "Crunch",
-    messages: [
-      clearGlobalPresetToggles(),
-      loops.off,
-      togglePreset(),
-      ampChannels.crunch,
-      hxStomp.snap1,
-    ],
+    messages: [...presetBaseMessages, ampChannels.crunch],
   }),
   rhythm: preset({
     name: "Rhythm",
-    messages: [
-      clearGlobalPresetToggles(),
-      loops.off,
-      togglePreset(),
-      ampChannels.rhythm,
-      hxStomp.snap1,
-    ],
+    messages: [...presetBaseMessages, ampChannels.rhythm],
   }),
   heavy: preset({
     name: "Heavy",
-    messages: [
-      clearGlobalPresetToggles(),
-      loops.off,
-      togglePreset(),
-      ampChannels.heavy,
-    ],
+    messages: [...presetBaseMessages, ampChannels.heavy],
   }),
   lead: preset({
     name: "Lead",
-    messages: [
-      clearGlobalPresetToggles(),
-      loops.off,
-      togglePreset(),
-      ampChannels.lead,
-    ],
+    messages: [...presetBaseMessages, ampChannels.lead],
   }),
 }
 
