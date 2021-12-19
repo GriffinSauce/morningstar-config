@@ -3,6 +3,20 @@ import Action from "./types/Action"
 import Type from "./types/Type"
 import Message from "./types/Message"
 
+export const empty = (): Message => {
+  return {
+    data1: 0,
+    data2: 0,
+    data3: 0,
+    data4: 0,
+    channel: 1,
+    type: Type.Empty,
+    action: Action.NoAction,
+    toggle: Toggle.Pos1,
+    msgInfo: "",
+  }
+}
+
 export const programChange = ({
   action = Action.Press,
   toggle = Toggle.Both,
@@ -26,6 +40,7 @@ export const programChange = ({
     msgInfo: "",
   }
 }
+
 export const controlChange = ({
   action = Action.Press,
   toggle = Toggle.Both,
