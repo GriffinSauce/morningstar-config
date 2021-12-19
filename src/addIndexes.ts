@@ -9,7 +9,26 @@ const addIndexes = (banks: Bank[]): Bank[] =>
     return {
       ...bank,
       bankNumber,
+      bankMsgArray: bank.bankMsgArray.map((message, msgNum) => {
+        return {
+          ...message,
+          msgNum,
+        }
+      }),
       presetArray: bank.presetArray.map((preset, presetNum) => {
+        return {
+          ...preset,
+          presetNum,
+          bankNum: bankNumber,
+          msgArray: preset.msgArray.map((message, msgNum) => {
+            return {
+              ...message,
+              msgNum,
+            }
+          }),
+        }
+      }),
+      expPresetArray: bank.expPresetArray.map((preset, presetNum) => {
         return {
           ...preset,
           presetNum,
