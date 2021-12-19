@@ -117,7 +117,7 @@ const stompPresets = {
     ],
   }),
   stompMXROD: preset({
-    name: "Ages",
+    name: "MXR OD",
     toToggle: true,
     messages: [
       controlChange({
@@ -136,45 +136,25 @@ const stompPresets = {
   }),
 }
 
+const disengageSnapToggles = setToggle({
+  data1: 0,
+  data2: 64,
+  data3: 3,
+  data4: 0,
+})
+
 const snapPresets = {
   hxSnap1: preset({
     name: "Snap 1",
-    messages: [
-      setToggle({
-        data1: 0,
-        data2: 64,
-        data3: 3,
-        data4: 0,
-      }),
-      togglePreset(),
-      hxStomp.snap1,
-    ],
+    messages: [disengageSnapToggles, togglePreset(), hxStomp.snap1],
   }),
   hxSnap2: preset({
     name: "Snap 2",
-    messages: [
-      setToggle({
-        data1: 0,
-        data2: 64,
-        data3: 3,
-        data4: 0,
-      }),
-      togglePreset(),
-      hxStomp.snap2,
-    ],
+    messages: [disengageSnapToggles, togglePreset(), hxStomp.snap2],
   }),
   hxSnap3: preset({
     name: "Snap 3",
-    messages: [
-      setToggle({
-        data1: 0,
-        data2: 64,
-        data3: 3,
-        data4: 0,
-      }),
-      togglePreset(),
-      hxStomp.snap3,
-    ],
+    messages: [disengageSnapToggles, togglePreset(), hxStomp.snap3],
   }),
 }
 
