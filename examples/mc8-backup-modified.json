@@ -1,0 +1,3279 @@
+{
+  "schemaVersion": 1,
+  "dumpType": "allBanks",
+  "deviceModel": 4,
+  "downloadDate": "2021-12-18T08:08:21.730Z",
+  "hash": -1954114707,
+  "data": {
+    "bankArray": [
+      {
+        "bankNumber": 0,
+        "bankName": "CS Base",
+        "bankClearToggle": false,
+        "bankMsgArray": [],
+        "presetArray": [
+          {
+            "presetNum": 0,
+            "bankNum": 0,
+            "isExp": false,
+            "shortName": "Clean",
+            "toggleName": ">>Clean<<",
+            "longName": "Clean",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 126,
+                "data2": 3,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 89,
+                "data2": 11,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 3,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 1,
+            "bankNum": 0,
+            "isExp": false,
+            "shortName": "Crunch",
+            "toggleName": ">>Crunch<<",
+            "longName": "Crunch",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 126,
+                "data2": 3,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 89,
+                "data2": 11,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 3,
+                "data1": 1,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 2,
+            "bankNum": 0,
+            "isExp": false,
+            "shortName": "Rhythm",
+            "toggleName": ">>Rhythm<<",
+            "longName": "Rhythm",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 126,
+                "data2": 3,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 89,
+                "data2": 11,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 3,
+                "data1": 2,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 3,
+            "bankNum": 0,
+            "isExp": false,
+            "shortName": "Heavy",
+            "toggleName": ">>Heavy<<",
+            "longName": "Heavy",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 126,
+                "data2": 3,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 89,
+                "data2": 11,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 3,
+                "data1": 3,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 4,
+            "bankNum": 0,
+            "isExp": false,
+            "shortName": "TS",
+            "toggleName": ">>TS<<",
+            "longName": "TS",
+            "toToggle": true,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 80,
+                "data2": 127,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 0,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 80,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 1,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 5,
+            "bankNum": 0,
+            "isExp": false,
+            "shortName": "SD-1",
+            "toggleName": ">>SD-1<<",
+            "longName": "SD-1",
+            "toToggle": true,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 81,
+                "data2": 127,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 0,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 81,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 1,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 6,
+            "bankNum": 0,
+            "isExp": false,
+            "shortName": "Ages",
+            "toggleName": ">>Ages<<",
+            "longName": "Ages",
+            "toToggle": true,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 82,
+                "data2": 127,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 0,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 82,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 1,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 7,
+            "bankNum": 0,
+            "isExp": false,
+            "shortName": "Lead",
+            "toggleName": ">>Lead<<",
+            "longName": "Lead",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 126,
+                "data2": 3,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 89,
+                "data2": 11,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 3,
+                "data1": 4,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 8,
+            "bankNum": 0,
+            "isExp": false,
+            "shortName": "Off",
+            "toggleName": ">>Off<<",
+            "longName": "Off",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 0,
+                "data2": 60,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 3,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 9,
+            "bankNum": 0,
+            "isExp": false,
+            "shortName": "Half",
+            "toggleName": ">>Half<<",
+            "longName": "Half",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 0,
+                "data2": 60,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 1,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 3,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 10,
+            "bankNum": 0,
+            "isExp": false,
+            "shortName": "Modern",
+            "toggleName": ">>Modern<<",
+            "longName": "Modern",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 0,
+                "data2": 60,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 2,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 3,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 11,
+            "bankNum": 0,
+            "isExp": false,
+            "shortName": "Deep",
+            "toggleName": ">>Deep<<",
+            "longName": "Deep",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 0,
+                "data2": 60,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 3,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 3,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 12,
+            "bankNum": 0,
+            "isExp": false,
+            "shortName": "Snap 1",
+            "toggleName": ">>Snap 1<<",
+            "longName": "Snap 1",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 0,
+                "data2": 64,
+                "data3": 3,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 69,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 13,
+            "bankNum": 0,
+            "isExp": false,
+            "shortName": "Snap 2",
+            "toggleName": ">>Snap 2<<",
+            "longName": "Snap 2",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 0,
+                "data2": 64,
+                "data3": 3,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 69,
+                "data2": 1,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 14,
+            "bankNum": 0,
+            "isExp": false,
+            "shortName": "Snap 3",
+            "toggleName": ">>Snap 3<<",
+            "longName": "Snap 3",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 0,
+                "data2": 64,
+                "data3": 3,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 69,
+                "data2": 2,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          }
+        ],
+        "expPresetArray": []
+      },
+      {
+        "bankNumber": 1,
+        "bankName": "CS: I Lost Track",
+        "bankClearToggle": false,
+        "bankMsgArray": [],
+        "presetArray": [
+          {
+            "presetNum": 0,
+            "bankNum": 1,
+            "isExp": false,
+            "shortName": "Intro",
+            "toggleName": ">>Intro<<",
+            "longName": "Intro",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 126,
+                "data2": 3,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 89,
+                "data2": 11,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 3,
+                "data1": 1,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 4,
+                "data1": 69,
+                "data2": 1,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 1,
+            "bankNum": 1,
+            "isExp": false,
+            "shortName": "Crunch",
+            "toggleName": ">>Crunch<<",
+            "longName": "Crunch",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 126,
+                "data2": 3,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 89,
+                "data2": 11,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 3,
+                "data1": 1,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 4,
+                "data1": 69,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 2,
+            "bankNum": 1,
+            "isExp": false,
+            "shortName": "Rhythm",
+            "toggleName": ">>Rhythm<<",
+            "longName": "Rhythm",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 126,
+                "data2": 3,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 89,
+                "data2": 11,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 3,
+                "data1": 2,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 4,
+                "data1": 69,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 3,
+            "bankNum": 1,
+            "isExp": false,
+            "shortName": "Heavy",
+            "toggleName": ">>Heavy<<",
+            "longName": "Heavy",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 126,
+                "data2": 3,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 89,
+                "data2": 11,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 3,
+                "data1": 3,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 4,
+                "data1": 69,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 4,
+            "bankNum": 1,
+            "isExp": false,
+            "shortName": "TS",
+            "toggleName": ">>TS<<",
+            "longName": "TS",
+            "toToggle": true,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 80,
+                "data2": 127,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 0,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 80,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 1,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 5,
+            "bankNum": 1,
+            "isExp": false,
+            "shortName": "SD-1",
+            "toggleName": ">>SD-1<<",
+            "longName": "SD-1",
+            "toToggle": true,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 81,
+                "data2": 127,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 0,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 81,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 1,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 6,
+            "bankNum": 1,
+            "isExp": false,
+            "shortName": "Ages",
+            "toggleName": ">>Ages<<",
+            "longName": "Ages",
+            "toToggle": true,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 82,
+                "data2": 127,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 0,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 82,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 1,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 7,
+            "bankNum": 1,
+            "isExp": false,
+            "shortName": "Lead",
+            "toggleName": ">>Lead<<",
+            "longName": "Lead",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 126,
+                "data2": 3,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 89,
+                "data2": 11,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 3,
+                "data1": 4,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 4,
+                "data1": 69,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 8,
+            "bankNum": 1,
+            "isExp": false,
+            "shortName": "Snap 1",
+            "toggleName": ">>Snap 1<<",
+            "longName": "Snap 1",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 0,
+                "data2": 64,
+                "data3": 3,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 69,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 9,
+            "bankNum": 1,
+            "isExp": false,
+            "shortName": "Snap 2",
+            "toggleName": ">>Snap 2<<",
+            "longName": "Snap 2",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 0,
+                "data2": 64,
+                "data3": 3,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 69,
+                "data2": 1,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 14,
+            "bankNum": 1,
+            "isExp": false,
+            "shortName": "Snap 3",
+            "toggleName": ">>Snap 3<<",
+            "longName": "Snap 3",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 0,
+                "data2": 64,
+                "data3": 3,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 69,
+                "data2": 2,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          }
+        ],
+        "expPresetArray": []
+      },
+      {
+        "bankNumber": 2,
+        "bankName": "CS Anchor",
+        "bankClearToggle": false,
+        "bankMsgArray": [],
+        "presetArray": [
+          {
+            "presetNum": 0,
+            "bankNum": 2,
+            "isExp": false,
+            "shortName": "Clean",
+            "toggleName": ">>Clean<<",
+            "longName": "Clean",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 126,
+                "data2": 3,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 89,
+                "data2": 11,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 3,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 4,
+                "data1": 69,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 1,
+            "bankNum": 2,
+            "isExp": false,
+            "shortName": "Crunch",
+            "toggleName": ">>Crunch<<",
+            "longName": "Crunch",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 126,
+                "data2": 3,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 89,
+                "data2": 11,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 3,
+                "data1": 1,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 4,
+                "data1": 69,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 2,
+            "bankNum": 2,
+            "isExp": false,
+            "shortName": "Rhythm",
+            "toggleName": ">>Rhythm<<",
+            "longName": "Rhythm",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 126,
+                "data2": 3,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 89,
+                "data2": 11,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 3,
+                "data1": 2,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 4,
+                "data1": 69,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 3,
+            "bankNum": 2,
+            "isExp": false,
+            "shortName": "Heavy",
+            "toggleName": ">>Heavy<<",
+            "longName": "Heavy",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 126,
+                "data2": 3,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 89,
+                "data2": 11,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 3,
+                "data1": 3,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 4,
+                "data1": 69,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 5,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 3,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 4,
+            "bankNum": 2,
+            "isExp": false,
+            "shortName": "HeavyMod",
+            "toggleName": ">HeavyMod<",
+            "longName": "HeavyMod",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 126,
+                "data2": 3,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 89,
+                "data2": 11,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 3,
+                "data1": 3,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 4,
+                "data1": 69,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 5,
+                "data1": 2,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 3,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 5,
+            "bankNum": 2,
+            "isExp": false,
+            "shortName": "CrunchOct",
+            "toggleName": ">CrunchOc<",
+            "longName": "CrunchOct",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 126,
+                "data2": 3,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 89,
+                "data2": 11,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 3,
+                "data1": 1,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 4,
+                "data1": 69,
+                "data2": 1,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 6,
+            "bankNum": 2,
+            "isExp": false,
+            "shortName": "RhythmOct",
+            "toggleName": ">RhytmOct<",
+            "longName": "RhythmOct",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 126,
+                "data2": 3,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 89,
+                "data2": 11,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 3,
+                "data1": 2,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 4,
+                "data1": 69,
+                "data2": 1,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 7,
+            "bankNum": 2,
+            "isExp": false,
+            "shortName": "LeadOct",
+            "toggleName": ">LeadOct<",
+            "longName": "LeadOct",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 126,
+                "data2": 3,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 89,
+                "data2": 11,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 3,
+                "data1": 4,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 4,
+                "data1": 69,
+                "data2": 2,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 8,
+            "bankNum": 2,
+            "isExp": false,
+            "shortName": "Off",
+            "toggleName": ">>Off<<",
+            "longName": "Off",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 0,
+                "data2": 60,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 3,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 9,
+            "bankNum": 2,
+            "isExp": false,
+            "shortName": "Half",
+            "toggleName": ">>Half<<",
+            "longName": "Half",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 0,
+                "data2": 60,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 1,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 3,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 10,
+            "bankNum": 2,
+            "isExp": false,
+            "shortName": "Modern",
+            "toggleName": ">>Modern<<",
+            "longName": "Modern",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 0,
+                "data2": 60,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 2,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 3,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 11,
+            "bankNum": 2,
+            "isExp": false,
+            "shortName": "Deep",
+            "toggleName": ">>Deep<<",
+            "longName": "Deep",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 0,
+                "data2": 60,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 3,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 3,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 12,
+            "bankNum": 2,
+            "isExp": false,
+            "shortName": "Snap 1",
+            "toggleName": ">>Snap 1<<",
+            "longName": "Snap 1",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 0,
+                "data2": 64,
+                "data3": 3,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 69,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 13,
+            "bankNum": 2,
+            "isExp": false,
+            "shortName": "Snap 2",
+            "toggleName": ">>Snap 2<<",
+            "longName": "Snap 2",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 0,
+                "data2": 64,
+                "data3": 3,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 69,
+                "data2": 1,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 14,
+            "bankNum": 2,
+            "isExp": false,
+            "shortName": "Snap 3",
+            "toggleName": ">>Snap 3<<",
+            "longName": "Snap 3",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 0,
+                "data2": 64,
+                "data3": 3,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 69,
+                "data2": 2,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          }
+        ],
+        "expPresetArray": []
+      },
+      {
+        "bankNumber": 3,
+        "bankName": "CS This is not a drill",
+        "bankClearToggle": false,
+        "bankMsgArray": [],
+        "presetArray": [
+          {
+            "presetNum": 0,
+            "bankNum": 3,
+            "isExp": false,
+            "shortName": "Intro",
+            "toggleName": ">>Intro<<",
+            "longName": "Intro",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 126,
+                "data2": 3,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 89,
+                "data2": 11,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 3,
+                "data1": 2,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 4,
+                "data1": 69,
+                "data2": 1,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 1,
+            "bankNum": 3,
+            "isExp": false,
+            "shortName": "Crunch",
+            "toggleName": ">>Crunch<<",
+            "longName": "Crunch",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 126,
+                "data2": 3,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 89,
+                "data2": 11,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 3,
+                "data1": 1,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 4,
+                "data1": 69,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 2,
+            "bankNum": 3,
+            "isExp": false,
+            "shortName": "Rhythm",
+            "toggleName": ">>Rhythm<<",
+            "longName": "Rhythm",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 126,
+                "data2": 3,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 89,
+                "data2": 11,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 3,
+                "data1": 2,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 4,
+                "data1": 69,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 3,
+            "bankNum": 3,
+            "isExp": false,
+            "shortName": "Heavy",
+            "toggleName": ">>Heavy<<",
+            "longName": "Heavy",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 126,
+                "data2": 3,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 89,
+                "data2": 11,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 3,
+                "data1": 3,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 4,
+                "data1": 69,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 4,
+            "bankNum": 3,
+            "isExp": false,
+            "shortName": "TS",
+            "toggleName": ">>TS<<",
+            "longName": "TS",
+            "toToggle": true,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 80,
+                "data2": 127,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 0,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 80,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 1,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 5,
+            "bankNum": 3,
+            "isExp": false,
+            "shortName": "SD-1",
+            "toggleName": ">>SD-1<<",
+            "longName": "SD-1",
+            "toToggle": true,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 81,
+                "data2": 127,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 0,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 81,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 1,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 6,
+            "bankNum": 3,
+            "isExp": false,
+            "shortName": "Ages",
+            "toggleName": ">>Ages<<",
+            "longName": "Ages",
+            "toToggle": true,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 82,
+                "data2": 127,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 0,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 82,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 1,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 7,
+            "bankNum": 3,
+            "isExp": false,
+            "shortName": "Lead",
+            "toggleName": ">>Lead<<",
+            "longName": "Lead",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 62,
+                "data2": 3,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 89,
+                "data2": 11,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 3,
+                "data1": 4,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 4,
+                "data1": 81,
+                "data2": 127,
+                "data3": 0,
+                "data4": 0,
+                "channel": 6,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 5,
+                "data1": 65,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 6,
+                "data1": 69,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 8,
+            "bankNum": 3,
+            "isExp": false,
+            "shortName": "Off",
+            "toggleName": ">>Off<<",
+            "longName": "Off",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 0,
+                "data2": 60,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 3,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 9,
+            "bankNum": 3,
+            "isExp": false,
+            "shortName": "Half",
+            "toggleName": ">>Half<<",
+            "longName": "Half",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 0,
+                "data2": 60,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 1,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 3,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 10,
+            "bankNum": 3,
+            "isExp": false,
+            "shortName": "Modern",
+            "toggleName": ">>Modern<<",
+            "longName": "Modern",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 0,
+                "data2": 60,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 2,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 3,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 11,
+            "bankNum": 3,
+            "isExp": false,
+            "shortName": "Deep",
+            "toggleName": ">>Deep<<",
+            "longName": "Deep",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 0,
+                "data2": 60,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 3,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 3,
+                "type": 1,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 12,
+            "bankNum": 3,
+            "isExp": false,
+            "shortName": "Snap 1",
+            "toggleName": ">>Snap 1<<",
+            "longName": "Snap 1",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 0,
+                "data2": 64,
+                "data3": 3,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 69,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 13,
+            "bankNum": 3,
+            "isExp": false,
+            "shortName": "Snap 2",
+            "toggleName": ">>Snap 2<<",
+            "longName": "Snap 2",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 0,
+                "data2": 64,
+                "data3": 3,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 69,
+                "data2": 1,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          },
+          {
+            "presetNum": 14,
+            "bankNum": 3,
+            "isExp": false,
+            "shortName": "Snap 3",
+            "toggleName": ">>Snap 3<<",
+            "longName": "Snap 3",
+            "toToggle": false,
+            "toBlink": true,
+            "toMsgScroll": false,
+            "toggleGroup": 0,
+            "msgArray": [
+              {
+                "msgNum": 0,
+                "data1": 0,
+                "data2": 64,
+                "data3": 3,
+                "data4": 0,
+                "channel": 1,
+                "type": 15,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 1,
+                "data1": 0,
+                "data2": 0,
+                "data3": 0,
+                "data4": 0,
+                "channel": 1,
+                "type": 22,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              },
+              {
+                "msgNum": 2,
+                "data1": 69,
+                "data2": 2,
+                "data3": 0,
+                "data4": 0,
+                "channel": 2,
+                "type": 2,
+                "action": 1,
+                "toggle": 2,
+                "msgInfo": ""
+              }
+            ]
+          }
+        ],
+        "expPresetArray": []
+      }
+    ]
+  }
+}

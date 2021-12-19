@@ -1,0 +1,20 @@
+{
+  "name": "morningstar-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --watch 'src/**/*' -e ts,tsx --exec 'yarn run esr --cache src/index.ts'",
+    "build": "esr src/index.ts",
+    "format": "prettier . --write"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.5",
+    "esbuild-runner": "^2.2.1",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1"
+  },
+  "dependencies": {
+    "@types/node": "^17.0.0"
+  }
+}
