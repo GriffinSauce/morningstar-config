@@ -91,7 +91,6 @@ export const setToggle = ({
   data4: number
 }): Message => {
   return {
-    msgNum: 0,
     data1,
     data2,
     data3,
@@ -112,7 +111,6 @@ export const clearGlobalPresetToggles = ({
   toggle?: Toggle
 } = {}): Message => {
   return {
-    msgNum: 0,
     data1: 126,
     data2: 3,
     data3: 0,
