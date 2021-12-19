@@ -6,6 +6,7 @@ import {
   clearGlobalPresetToggles,
   setToggle,
 } from "./messages"
+import padMessageLists from "./padMessageLists"
 import preset from "./preset"
 import Config from "./types/Config"
 import Toggle from "./types/Toggle"
@@ -81,6 +82,7 @@ const presets = {
 const stompPresets = {
   stompGreenRhino: preset({
     name: "TS",
+    toToggle: true,
     messages: [
       controlChange({
         number: 80,
@@ -98,6 +100,7 @@ const stompPresets = {
   }),
   stompSD1: preset({
     name: "SD-1",
+    toToggle: true,
     messages: [
       controlChange({
         number: 81,
@@ -115,6 +118,7 @@ const stompPresets = {
   }),
   stompMXROD: preset({
     name: "Ages",
+    toToggle: true,
     messages: [
       controlChange({
         number: 82,
@@ -181,129 +185,131 @@ const config: Config = {
   downloadDate: "2021-12-18T08:08:21.730Z",
   hash: -1954114707,
   data: {
-    bankArray: addIndexes([
-      {
-        bankName: "CS Base",
-        bankClearToggle: false,
-        bankMsgArray: [],
-        presetArray: [
-          presets.clean,
-          presets.crunch,
-          presets.rhythm,
-          presets.heavy,
-          stompPresets.stompGreenRhino,
-          stompPresets.stompSD1,
-          stompPresets.stompMXROD,
-          presets.lead,
-          snapPresets.hxSnap1,
-          snapPresets.hxSnap2,
-          snapPresets.hxSnap3,
-        ],
-        expPresetArray: [],
-      },
-      {
-        bankName: "CS: I Lost Track",
-        bankClearToggle: false,
-        bankMsgArray: [],
-        presetArray: [
-          preset({
-            name: "Intro",
-            messages: [
-              clearGlobalPresetToggles(),
-              loops.off,
-              togglePreset(),
-              ampChannels.crunch,
-              hxStomp.snap2,
-            ],
-          }),
-          presets.crunch,
-          presets.rhythm,
-          presets.heavy,
-          stompPresets.stompGreenRhino,
-          stompPresets.stompSD1,
-          stompPresets.stompMXROD,
-          presets.lead,
-          snapPresets.hxSnap1,
-          snapPresets.hxSnap2,
-          snapPresets.hxSnap3,
-        ],
-        expPresetArray: [],
-      },
-      {
-        bankName: "CS Anchor",
-        bankClearToggle: false,
-        bankMsgArray: [],
-        presetArray: [
-          presets.clean,
-          presets.crunch,
-          presets.rhythm,
-          presets.heavy,
-          stompPresets.stompGreenRhino,
-          preset({
-            name: "CrunchOct",
-            messages: [
-              clearGlobalPresetToggles(),
-              loops.off,
-              togglePreset(),
-              ampChannels.crunch,
-              hxStomp.snap2,
-            ],
-          }),
-          preset({
-            name: "RhythmOct",
-            messages: [
-              clearGlobalPresetToggles(),
-              loops.off,
-              togglePreset(),
-              ampChannels.rhythm,
-              hxStomp.snap2,
-            ],
-          }),
-          preset({
-            name: "LeadOct",
-            messages: [
-              clearGlobalPresetToggles(),
-              loops.off,
-              togglePreset(),
-              ampChannels.lead,
-              hxStomp.snap3,
-            ],
-          }),
-          snapPresets.hxSnap1,
-          snapPresets.hxSnap2,
-          snapPresets.hxSnap3,
-        ],
-        expPresetArray: [],
-      },
-      {
-        bankName: "CS This is not a drill",
-        bankClearToggle: false,
-        bankMsgArray: [],
-        presetArray: [
-          preset({
-            name: "Intro",
-            messages: [
-              clearGlobalPresetToggles(),
-              loops.off,
-              togglePreset(),
-              ampChannels.rhythm,
-              hxStomp.snap2,
-            ],
-          }),
-          presets.crunch,
-          presets.rhythm,
-          presets.heavy,
-          stompPresets.stompGreenRhino,
-          stompPresets.stompSD1,
-          stompPresets.stompMXROD,
-          presets.lead,
-          snapPresets.hxSnap1,
-          snapPresets.hxSnap2,
-          snapPresets.hxSnap3,
-        ],
-        expPresetArray: [],
-      },
-    ]),
+    bankArray: addIndexes(
+      padMessageLists([
+        {
+          bankName: "CS Base",
+          bankClearToggle: false,
+          bankMsgArray: [],
+          presetArray: [
+            presets.clean,
+            presets.crunch,
+            presets.rhythm,
+            presets.heavy,
+            stompPresets.stompGreenRhino,
+            stompPresets.stompSD1,
+            stompPresets.stompMXROD,
+            presets.lead,
+            snapPresets.hxSnap1,
+            snapPresets.hxSnap2,
+            snapPresets.hxSnap3,
+          ],
+          expPresetArray: [],
+        },
+        {
+          bankName: "CS: I Lost Track",
+          bankClearToggle: false,
+          bankMsgArray: [],
+          presetArray: [
+            preset({
+              name: "Intro",
+              messages: [
+                clearGlobalPresetToggles(),
+                loops.off,
+                togglePreset(),
+                ampChannels.crunch,
+                hxStomp.snap2,
+              ],
+            }),
+            presets.crunch,
+            presets.rhythm,
+            presets.heavy,
+            stompPresets.stompGreenRhino,
+            stompPresets.stompSD1,
+            stompPresets.stompMXROD,
+            presets.lead,
+            snapPresets.hxSnap1,
+            snapPresets.hxSnap2,
+            snapPresets.hxSnap3,
+          ],
+          expPresetArray: [],
+        },
+        {
+          bankName: "CS Anchor",
+          bankClearToggle: false,
+          bankMsgArray: [],
+          presetArray: [
+            presets.clean,
+            presets.crunch,
+            presets.rhythm,
+            presets.heavy,
+            stompPresets.stompGreenRhino,
+            preset({
+              name: "CrunchOct",
+              messages: [
+                clearGlobalPresetToggles(),
+                loops.off,
+                togglePreset(),
+                ampChannels.crunch,
+                hxStomp.snap2,
+              ],
+            }),
+            preset({
+              name: "RhythmOct",
+              messages: [
+                clearGlobalPresetToggles(),
+                loops.off,
+                togglePreset(),
+                ampChannels.rhythm,
+                hxStomp.snap2,
+              ],
+            }),
+            preset({
+              name: "LeadOct",
+              messages: [
+                clearGlobalPresetToggles(),
+                loops.off,
+                togglePreset(),
+                ampChannels.lead,
+                hxStomp.snap3,
+              ],
+            }),
+            snapPresets.hxSnap1,
+            snapPresets.hxSnap2,
+            snapPresets.hxSnap3,
+          ],
+          expPresetArray: [],
+        },
+        {
+          bankName: "CS This is not a drill",
+          bankClearToggle: false,
+          bankMsgArray: [],
+          presetArray: [
+            preset({
+              name: "Intro",
+              messages: [
+                clearGlobalPresetToggles(),
+                loops.off,
+                togglePreset(),
+                ampChannels.rhythm,
+                hxStomp.snap2,
+              ],
+            }),
+            presets.crunch,
+            presets.rhythm,
+            presets.heavy,
+            stompPresets.stompGreenRhino,
+            stompPresets.stompSD1,
+            stompPresets.stompMXROD,
+            presets.lead,
+            snapPresets.hxSnap1,
+            snapPresets.hxSnap2,
+            snapPresets.hxSnap3,
+          ],
+          expPresetArray: [],
+        },
+      ]),
+    ),
   },
 }
 
