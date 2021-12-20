@@ -1,5 +1,11 @@
 import Config from "./types/Config"
 
+/**
+ * Generates a (insecure) hash of a string
+ *
+ * Needs to match editor implementation, probably from:
+ * https://stackoverflow.com/questions/7616461/generate-a-hash-from-string-in-javascript
+ */
 const generateSimpleHash = (dataString: string) => {
   let hash = 0
 
@@ -12,6 +18,9 @@ const generateSimpleHash = (dataString: string) => {
   return hash
 }
 
+/**
+ * Generate a hash of config data
+ */
 const generateDataHash = (data: Config["data"]) => {
   const stringified = JSON.stringify(data)
   return generateSimpleHash(stringified)
