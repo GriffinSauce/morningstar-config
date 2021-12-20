@@ -35,6 +35,7 @@ yarn dev
 ## Creating your own config
 
 To reuse this repo to generate your own MC8 config you should:
+- MAKE A BACKUP of your existing setup
 - Check the [caveats](#caveats)
 - Fork the repo
 - Change [./src/config.ts](./src/config.ts) to your needs
