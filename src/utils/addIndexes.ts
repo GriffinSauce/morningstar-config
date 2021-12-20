@@ -1,4 +1,4 @@
-import Bank from "./types/Bank"
+import Bank from "../types/Bank"
 
 /**
  * The configuration output should have indexes for each bank, preset and message.

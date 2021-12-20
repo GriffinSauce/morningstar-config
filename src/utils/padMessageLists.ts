@@ -1,6 +1,6 @@
-import { empty } from "./messages"
-import Bank from "./types/Bank"
-import Message from "./types/Message"
+import { empty } from "../messages"
+import Bank from "../types/Bank"
+import Message from "../types/Message"
 
 const padMessageList = (messages: Message[]) => {
   const messageListSize = 16

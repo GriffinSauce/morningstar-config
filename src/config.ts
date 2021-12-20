@@ -1,6 +1,6 @@
-import addIndexes from "./addIndexes"
-import generateDataHash from "./generateDataHash"
-import padMessageLists from "./padMessageLists"
+import addIndexes from "./utils/addIndexes"
+import generateDataHash from "./utils/generateDataHash"
+import padMessageLists from "./utils/padMessageLists"
 import {
   programChange,
   controlChange,
