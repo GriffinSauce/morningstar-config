@@ -1,3 +1,5 @@
+import Config from "./types/Config"
+
 const generateSimpleHash = (dataString: string) => {
   let hash = 0
 
