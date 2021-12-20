@@ -1,4 +1,6 @@
 import addIndexes from "./addIndexes"
+import generateDataHash from "./generateDataHash"
+import padMessageLists from "./padMessageLists"
 import {
   programChange,
   controlChange,
@@ -6,7 +8,6 @@ import {
   clearGlobalPresetToggles,
   setToggle,
 } from "./messages"
-import padMessageLists from "./padMessageLists"
 import preset from "./preset"
 import Config from "./types/Config"
 import Toggle from "./types/Toggle"
@@ -282,15 +283,17 @@ const banks = [
   },
 ]
 
+const data: Config["data"] = {
+  bankArray: addIndexes(padMessageLists(banks)),
+}
+
 const config: Config = {
   schemaVersion: 1,
   dumpType: "allBanks",
   deviceModel: 4,
-  downloadDate: "2021-12-18T08:08:21.730Z",
-  hash: -1954114707,
-  data: {
-    bankArray: addIndexes(padMessageLists(banks)),
-  },
+  downloadDate: new Date().toISOString(),
+  hash: generateDataHash(data),
+  data,
 }
 
 export default config
