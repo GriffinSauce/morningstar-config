@@ -1,6 +1,6 @@
 # Morningstar Config
 
-This codebase generates a configuration from TypeScript for the [Morningstar MC8](https://www.morningstarfx.com/mc8-midi-controller) MIDI footcontroller that can be imported via the [Morningstar editor](https://editor-mkii.morningstar.io/mcgen2).
+This codebase generates a configuration from TypeScript for the [Morningstar MC8](https://www.morningstarfx.com/mc8-midi-controller) MIDI controller that can be imported via the [Morningstar editor](https://editor-mkii.morningstar.io/mcgen2).
 
 ## Install
 
