@@ -1,7 +1,7 @@
-import Toggle from "./types/Toggle"
-import Action from "./types/Action"
-import Type from "./types/Type"
-import Message from "./types/Message"
+import Toggle from "../types/Toggle"
+import Action from "../types/Action"
+import Type from "../types/Type"
+import Message from "../types/Message"
 
 export const empty = (): Message => {
   return {

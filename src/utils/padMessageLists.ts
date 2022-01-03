@@ -1,4 +1,4 @@
-import { empty } from "../messages"
+import { empty } from "../entities/messages"
 import Bank from "../types/Bank"
 import Message from "../types/Message"
 

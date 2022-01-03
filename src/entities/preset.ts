@@ -1,4 +1,4 @@
-import Preset from "./types/Preset"
+import Preset from "../types/Preset"
 
 interface Input
   extends Pick<

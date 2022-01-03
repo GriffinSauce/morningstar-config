@@ -7,16 +7,18 @@ import {
   togglePreset,
   clearGlobalPresetToggles,
   setToggle,
-} from "./messages"
-import preset from "./preset"
+} from "./entities/messages"
 import Config from "./types/Config"
 import Toggle from "./types/Toggle"
+import preset from "./entities/preset"
+import bank, { BankDefinition } from "./entities/bank"
 
 const ampChannel = (program: number) =>
   programChange({
     channel: 1,
     program: 0,
   })
+
 const ampChannels = {
   clean: ampChannel(0),
   crunch: ampChannel(1),
@@ -78,62 +80,68 @@ const presets = {
     name: "Lead",
     messages: [...presetBaseMessages, ampChannels.lead],
   }),
+  crunchOct: preset({
+    name: "CrunchOct",
+    messages: [
+      clearGlobalPresetToggles(),
+      loops.off,
+      togglePreset(),
+      ampChannels.crunch,
+      hxStomp.snap2,
+    ],
+  }),
+  rhythmOct: preset({
+    name: "RhythmOct",
+    messages: [
+      clearGlobalPresetToggles(),
+      loops.off,
+      togglePreset(),
+      ampChannels.rhythm,
+      hxStomp.snap2,
+    ],
+  }),
+  leadOct: preset({
+    name: "LeadOct",
+    messages: [
+      clearGlobalPresetToggles(),
+      loops.off,
+      togglePreset(),
+      ampChannels.lead,
+      hxStomp.snap3,
+    ],
+  }),
 }
+
+const getStompMessages = (controlChangeNumber) => [
+  controlChange({
+    number: controlChangeNumber,
+    value: 127,
+    toggle: Toggle.Pos1,
+    channel: 6,
+  }),
+  controlChange({
+    number: controlChangeNumber,
+    value: 0,
+    toggle: Toggle.Pos2,
+    channel: 6,
+  }),
+]
 
 const stompPresets = {
   stompGreenRhino: preset({
     name: "TS",
     toToggle: true,
-    messages: [
-      controlChange({
-        number: 80,
-        value: 127,
-        toggle: Toggle.Pos1,
-        channel: 6,
-      }),
-      controlChange({
-        number: 80,
-        value: 0,
-        toggle: Toggle.Pos2,
-        channel: 6,
-      }),
-    ],
+    messages: getStompMessages(80),
   }),
   stompSD1: preset({
     name: "SD-1",
     toToggle: true,
-    messages: [
-      controlChange({
-        number: 81,
-        value: 127,
-        toggle: Toggle.Pos1,
-        channel: 6,
-      }),
-      controlChange({
-        number: 81,
-        value: 0,
-        toggle: Toggle.Pos2,
-        channel: 6,
-      }),
-    ],
+    messages: getStompMessages(81),
   }),
   stompMXROD: preset({
     name: "MXR OD",
     toToggle: true,
-    messages: [
-      controlChange({
-        number: 82,
-        value: 127,
-        toggle: Toggle.Pos1,
-        channel: 6,
-      }),
-      controlChange({
-        number: 82,
-        value: 0,
-        toggle: Toggle.Pos2,
-        channel: 6,
-      }),
-    ],
+    messages: getStompMessages(82),
   }),
 }
 
@@ -159,32 +167,30 @@ const snapPresets = {
   }),
 }
 
+const baseBank: BankDefinition = {
+  name: "CS Base",
+  presets: {
+    a: presets.clean,
+    b: presets.crunch,
+    c: presets.rhythm,
+    d: presets.heavy,
+    e: stompPresets.stompGreenRhino,
+    f: stompPresets.stompSD1,
+    g: stompPresets.stompMXROD,
+    h: presets.lead,
+    i: snapPresets.hxSnap1,
+    j: snapPresets.hxSnap2,
+    k: snapPresets.hxSnap3,
+  },
+}
+
 const banks = [
-  {
-    bankName: "CS Base",
-    bankClearToggle: false,
-    bankMsgArray: [],
-    presetArray: [
-      presets.clean,
-      presets.crunch,
-      presets.rhythm,
-      presets.heavy,
-      stompPresets.stompGreenRhino,
-      stompPresets.stompSD1,
-      stompPresets.stompMXROD,
-      presets.lead,
-      snapPresets.hxSnap1,
-      snapPresets.hxSnap2,
-      snapPresets.hxSnap3,
-    ],
-    expPresetArray: [],
-  },
-  {
-    bankName: "CS: I Lost Track",
-    bankClearToggle: false,
-    bankMsgArray: [],
-    presetArray: [
-      preset({
+  bank(baseBank),
+  bank({
+    name: "CS: I Lost Track",
+    base: baseBank,
+    presets: {
+      a: preset({
         name: "Intro",
         messages: [
           clearGlobalPresetToggles(),
@@ -194,71 +200,22 @@ const banks = [
           hxStomp.snap2,
         ],
       }),
-      presets.crunch,
-      presets.rhythm,
-      presets.heavy,
-      stompPresets.stompGreenRhino,
-      stompPresets.stompSD1,
-      stompPresets.stompMXROD,
-      presets.lead,
-      snapPresets.hxSnap1,
-      snapPresets.hxSnap2,
-      snapPresets.hxSnap3,
-    ],
-    expPresetArray: [],
-  },
-  {
-    bankName: "CS Anchor",
-    bankClearToggle: false,
-    bankMsgArray: [],
-    presetArray: [
-      presets.clean,
-      presets.crunch,
-      presets.rhythm,
-      presets.heavy,
-      stompPresets.stompGreenRhino,
-      preset({
-        name: "CrunchOct",
-        messages: [
-          clearGlobalPresetToggles(),
-          loops.off,
-          togglePreset(),
-          ampChannels.crunch,
-          hxStomp.snap2,
-        ],
-      }),
-      preset({
-        name: "RhythmOct",
-        messages: [
-          clearGlobalPresetToggles(),
-          loops.off,
-          togglePreset(),
-          ampChannels.rhythm,
-          hxStomp.snap2,
-        ],
-      }),
-      preset({
-        name: "LeadOct",
-        messages: [
-          clearGlobalPresetToggles(),
-          loops.off,
-          togglePreset(),
-          ampChannels.lead,
-          hxStomp.snap3,
-        ],
-      }),
-      snapPresets.hxSnap1,
-      snapPresets.hxSnap2,
-      snapPresets.hxSnap3,
-    ],
-    expPresetArray: [],
-  },
-  {
-    bankName: "CS This is not a drill",
-    bankClearToggle: false,
-    bankMsgArray: [],
-    presetArray: [
-      preset({
+    },
+  }),
+  bank({
+    name: "CS Anchor",
+    base: baseBank,
+    presets: {
+      f: presets.crunchOct,
+      g: presets.rhythmOct,
+      h: presets.leadOct,
+    },
+  }),
+  bank({
+    name: "CS This is not a drill",
+    base: baseBank,
+    presets: {
+      a: preset({
         name: "Intro",
         messages: [
           clearGlobalPresetToggles(),
@@ -268,19 +225,8 @@ const banks = [
           hxStomp.snap2,
         ],
       }),
-      presets.crunch,
-      presets.rhythm,
-      presets.heavy,
-      stompPresets.stompGreenRhino,
-      stompPresets.stompSD1,
-      stompPresets.stompMXROD,
-      presets.lead,
-      snapPresets.hxSnap1,
-      snapPresets.hxSnap2,
-      snapPresets.hxSnap3,
-    ],
-    expPresetArray: [],
-  },
+    },
+  }),
 ]
 
 const data: Config["data"] = {
