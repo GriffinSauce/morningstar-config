@@ -38,7 +38,7 @@ To reuse this repo to generate your own MC8 config you should:
 - MAKE A BACKUP of your existing setup
 - Check the [caveats](#caveats)
 - Fork the repo
-- Change [./src/config.ts](./src/config.ts) to your needs
+- Change [./src/config](./src/config/index.ts) to your needs
 - Run the [build](#build-the-config-file) (or [dev](#develop)) to generate the JSON
 
 ## Caveats
