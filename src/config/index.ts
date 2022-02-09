@@ -1,15 +1,19 @@
 import addIndexes from "../utils/addIndexes"
 import generateDataHash from "../utils/generateDataHash"
 import padMessageLists from "../utils/padMessageLists"
-import { togglePreset, clearGlobalPresetToggles } from "../entities/messages"
+
 import Config from "../types/Config"
+
+import { togglePreset, clearGlobalPresetToggles } from "../entities/messages"
 import preset from "../entities/preset"
 import bank, { BankDefinition } from "../entities/bank"
+
 import presets from "./presets"
 import { ampChannels, hxStomp, loops } from "./messages"
 
 const baseBank: BankDefinition = {
   name: "CS Base",
+  messages: [hxStomp.base],
   presets: {
     a: presets.clean,
     b: presets.crunch,
@@ -28,8 +32,47 @@ const baseBank: BankDefinition = {
 const banks = [
   bank(baseBank),
   bank({
+    name: "CS: Yesterday",
+    base: baseBank,
+  }),
+  bank({
+    name: "CS: History",
+    base: baseBank,
+  }),
+  bank({
+    name: "CS: State of Denial",
+    base: baseBank,
+  }),
+  bank({
+    name: "CS: Alluring Sea",
+    base: baseBank,
+  }),
+  bank({
+    name: "CS Anchor",
+    base: baseBank,
+    messages: [hxStomp.anchor],
+    presets: {
+      f: presets.crunchOct,
+      g: presets.rhythmOct,
+      h: presets.leadOct,
+    },
+  }),
+  bank({
+    name: "CS: Taking a Fall",
+    base: baseBank,
+  }),
+  bank({
+    name: "CS: On a Hold",
+    base: baseBank,
+  }),
+  bank({
+    name: "CS: Roam",
+    base: baseBank,
+  }),
+  bank({
     name: "CS: I Lost Track",
     base: baseBank,
+    messages: [hxStomp.iLostTrack],
     presets: {
       a: preset({
         name: "Intro",
@@ -44,17 +87,13 @@ const banks = [
     },
   }),
   bank({
-    name: "CS Anchor",
+    name: "CS: Anxiety",
     base: baseBank,
-    presets: {
-      f: presets.crunchOct,
-      g: presets.rhythmOct,
-      h: presets.leadOct,
-    },
   }),
   bank({
     name: "CS This is not a drill",
     base: baseBank,
+    messages: [hxStomp.notADrill],
     presets: {
       a: preset({
         name: "Intro",

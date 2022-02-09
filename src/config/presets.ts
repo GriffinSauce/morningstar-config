@@ -1,4 +1,5 @@
 import Toggle from "../types/Toggle"
+
 import {
   controlChange,
   togglePreset,
@@ -6,6 +7,7 @@ import {
   setToggle,
 } from "../entities/messages"
 import preset from "../entities/preset"
+
 import { ampChannels, hxStomp, loops } from "./messages"
 
 const toneBaseMessages = [

@@ -15,6 +15,22 @@ export const ampChannels = {
 }
 
 export const hxStomp = {
+  base: programChange({
+    program: 0,
+    channel: 2,
+  }),
+  iLostTrack: programChange({
+    program: 1,
+    channel: 2,
+  }),
+  anchor: programChange({
+    program: 2,
+    channel: 2,
+  }),
+  notADrill: programChange({
+    program: 3,
+    channel: 2,
+  }),
   snap1: controlChange({
     number: 69,
     value: 0,

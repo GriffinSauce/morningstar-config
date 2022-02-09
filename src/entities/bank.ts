@@ -1,7 +1,8 @@
+import merge from "lodash/merge"
+
 import Bank from "../types/Bank"
 import Message from "../types/Message"
 import Preset from "../types/Preset"
-import merge from "lodash/merge"
 
 const presetKeys = [
   "a",
@@ -41,7 +42,7 @@ type ExpressionPresets = Record<ExpressionPresetKey, Preset>
 interface BankDefinitionBase {
   name: string
   clearToggle?: boolean
-  msgArray?: Message[]
+  messages?: Message[]
   presets?: Partial<Presets>
   expressionPresets?: Partial<ExpressionPresets>
 }
@@ -53,15 +54,19 @@ export interface BankDefinition extends BankDefinitionBase {
 const bank = (input: BankDefinition): Bank => {
   const { base } = input
 
-  const merged = merge(base, input, {
-    presets: merge(base?.presets, input.presets),
-    expressionPresets: merge(base?.expressionPresets, input.expressionPresets),
+  const merged = merge({}, base, input, {
+    presets: merge({}, base?.presets, input.presets),
+    expressionPresets: merge(
+      {},
+      base?.expressionPresets,
+      input.expressionPresets,
+    ),
   })
 
   const {
     name,
     clearToggle = false,
-    msgArray = [],
+    messages = [],
     presets = {},
     expressionPresets = {},
   } = merged
@@ -69,7 +74,7 @@ const bank = (input: BankDefinition): Bank => {
   return {
     bankName: name,
     bankClearToggle: clearToggle,
-    bankMsgArray: msgArray,
+    bankMsgArray: messages,
     presetArray: Object.values(presets),
     expPresetArray: Object.values(expressionPresets),
   }
