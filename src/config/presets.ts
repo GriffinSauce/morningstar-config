@@ -32,6 +32,38 @@ const getStompMessages = (controlChangeNumber) => [
   }),
 ]
 
+/**
+ * Join loop settings to generate program number based on these masks;
+ *
+ * #   LP1 LP2
+ * 1X  OFF OFF
+ * 2X  ON  OFF
+ * 3X  OFF ON
+ * 4X  ON  ON
+ *
+ *  #  LP3 LP4
+ * X1  OFF OFF
+ * X2  ON  OFF
+ * X3  OFF ON
+ * X4  ON  ON
+ */
+const getLoopProgram = ({
+  one = false,
+  two = false,
+  three = false,
+  four = false,
+}): number => {
+  let programX = 10
+  let programY = 1
+  if (one) programX = 20
+  if (two) programX = 30
+  if (one && two) programX = 40
+  if (three) programY = 2
+  if (four) programY = 3
+  if (three && four) programY = 4
+  return programX + programY
+}
+
 const disengageSnapToggles = setToggle({
   data1: 0,
   data2: 64,
@@ -95,17 +127,56 @@ const presets = {
   stompGreenRhino: preset({
     name: "TS",
     toToggle: true,
-    messages: getStompMessages(80),
+    messages: [
+      setToggle({
+        // F & G off
+        data1: 64,
+        data2: 1,
+        data3: 0,
+        data4: 0,
+      }),
+      controlChange({
+        channel: 6,
+        number: 89,
+        value: getLoopProgram({ one: true }),
+      }),
+    ],
   }),
   stompSD1: preset({
     name: "SD-1",
     toToggle: true,
-    messages: getStompMessages(81),
+    messages: [
+      setToggle({
+        // E & G off
+        data1: 32,
+        data2: 1,
+        data3: 0,
+        data4: 0,
+      }),
+      controlChange({
+        channel: 6,
+        number: 89,
+        value: getLoopProgram({ two: true }),
+      }),
+    ],
   }),
   stompMXROD: preset({
-    name: "MXR OD",
+    name: "EQ",
     toToggle: true,
-    messages: getStompMessages(82),
+    messages: [
+      setToggle({
+        // E & F off
+        data1: 96,
+        data2: 0,
+        data3: 0,
+        data4: 0,
+      }),
+      controlChange({
+        channel: 6,
+        number: 89,
+        value: getLoopProgram({ three: true }),
+      }),
+    ],
   }),
 
   hxSnap1: preset({
