@@ -3,15 +3,24 @@ import { controlChange, programChange } from "../entities/messages"
 const ampChannel = (program: number) =>
   programChange({
     channel: 1,
-    program: 0,
+    program,
   })
 
 export const ampChannels = {
-  clean: ampChannel(0),
-  crunch: ampChannel(1),
-  rhythm: ampChannel(2),
-  heavy: ampChannel(3),
-  lead: ampChannel(4),
+  clean1: ampChannel(0),
+  /**
+   * @deprecated - single channel module
+   */
+  clean2: ampChannel(1),
+  crunch: ampChannel(2),
+  rhythm: ampChannel(3),
+  heavy1: ampChannel(4),
+  heavy2: ampChannel(5),
+  lead1: ampChannel(6),
+  /**
+   * @deprecated - single channel module
+   */
+  lead2: ampChannel(7),
 }
 
 export const hxStomp = {

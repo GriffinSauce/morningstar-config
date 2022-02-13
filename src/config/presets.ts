@@ -74,7 +74,7 @@ const disengageSnapToggles = setToggle({
 const presets = {
   clean: preset({
     name: "Clean",
-    messages: [...toneBaseMessages, ampChannels.clean],
+    messages: [...toneBaseMessages, ampChannels.clean1],
   }),
   crunch: preset({
     name: "Crunch",
@@ -86,11 +86,11 @@ const presets = {
   }),
   heavy: preset({
     name: "Heavy",
-    messages: [...toneBaseMessages, ampChannels.heavy],
+    messages: [...toneBaseMessages, ampChannels.heavy1],
   }),
   lead: preset({
     name: "Lead",
-    messages: [...toneBaseMessages, ampChannels.lead],
+    messages: [...toneBaseMessages, ampChannels.lead1],
   }),
 
   crunchOct: preset({
@@ -119,7 +119,7 @@ const presets = {
       clearGlobalPresetToggles(),
       loops.off,
       togglePreset(),
-      ampChannels.lead,
+      ampChannels.lead1,
       hxStomp.snap3,
     ],
   }),
