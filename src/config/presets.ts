@@ -160,7 +160,7 @@ const presets = {
       }),
     ],
   }),
-  stompMXROD: preset({
+  stompEQ: preset({
     name: "EQ",
     toToggle: true,
     messages: [
