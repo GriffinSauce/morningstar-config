@@ -3,35 +3,9 @@ import merge from "lodash/merge"
 import Bank from "../types/Bank"
 import Message from "../types/Message"
 import Preset from "../types/Preset"
-
-const presetKeys = [
-  "a",
-  "b",
-  "c",
-  "d",
-  "e",
-  "f",
-  "g",
-  "h",
-  "i",
-  "j",
-  "k",
-  "l",
-  "m",
-  "n",
-  "o",
-  "p",
-  "q",
-  "r",
-  "s",
-  "t",
-  "u",
-  "v",
-] as const
+import PresetKey from "../types/PresetKey"
 
 const expressionPresetKeys = ["expr1", "expr2", "expr3", "expr4"] as const
-
-type PresetKey = typeof presetKeys[number]
 
 type ExpressionPresetKey = typeof expressionPresetKeys[number]
 

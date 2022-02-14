@@ -9,27 +9,13 @@ import {
 import preset from "../entities/preset"
 
 import { ampChannels, hxStomp, loops } from "./messages"
+import { TogglePosition } from "../entities/getSetToggleData"
 
 const toneBaseMessages = [
   clearGlobalPresetToggles(),
   loops.off,
   togglePreset(),
   hxStomp.snap1,
-]
-
-const getStompMessages = (controlChangeNumber) => [
-  controlChange({
-    number: controlChangeNumber,
-    value: 127,
-    toggle: Toggle.Pos1,
-    channel: 6,
-  }),
-  controlChange({
-    number: controlChangeNumber,
-    value: 0,
-    toggle: Toggle.Pos2,
-    channel: 6,
-  }),
 ]
 
 /**
@@ -65,10 +51,12 @@ const getLoopProgram = ({
 }
 
 const disengageSnapToggles = setToggle({
-  data1: 0,
-  data2: 64,
-  data3: 3,
-  data4: 0,
+  togglePosition: TogglePosition.DisEngageToggle,
+  applyToPresets: {
+    m: true,
+    n: true,
+    o: true,
+  },
 })
 
 const presets = {
@@ -129,16 +117,23 @@ const presets = {
     toToggle: true,
     messages: [
       setToggle({
-        // E & F off
-        data1: 96,
-        data2: 0,
-        data3: 0,
-        data4: 0,
+        togglePosition: TogglePosition.DisEngageToggle,
+        applyToPresets: {
+          e: true,
+          f: true,
+        },
       }),
       controlChange({
+        toggle: Toggle.Pos1,
         channel: 6,
         number: 89,
         value: getLoopProgram({ one: true }),
+      }),
+      controlChange({
+        toggle: Toggle.Pos2,
+        channel: 6,
+        number: 89,
+        value: getLoopProgram({ one: false }),
       }),
     ],
   }),
@@ -147,16 +142,23 @@ const presets = {
     toToggle: true,
     messages: [
       setToggle({
-        // E & G off
-        data1: 32,
-        data2: 1,
-        data3: 0,
-        data4: 0,
+        togglePosition: TogglePosition.DisEngageToggle,
+        applyToPresets: {
+          e: true,
+          g: true,
+        },
       }),
       controlChange({
+        toggle: Toggle.Pos1,
         channel: 6,
         number: 89,
         value: getLoopProgram({ two: true }),
+      }),
+      controlChange({
+        toggle: Toggle.Pos2,
+        channel: 6,
+        number: 89,
+        value: getLoopProgram({ two: false }),
       }),
     ],
   }),
@@ -165,16 +167,23 @@ const presets = {
     toToggle: true,
     messages: [
       setToggle({
-        // F & G off
-        data1: 64,
-        data2: 1,
-        data3: 0,
-        data4: 0,
+        togglePosition: TogglePosition.DisEngageToggle,
+        applyToPresets: {
+          f: true,
+          g: true,
+        },
       }),
       controlChange({
+        toggle: Toggle.Pos1,
         channel: 6,
         number: 89,
         value: getLoopProgram({ three: true }),
+      }),
+      controlChange({
+        toggle: Toggle.Pos2,
+        channel: 6,
+        number: 89,
+        value: getLoopProgram({ three: false }),
       }),
     ],
   }),

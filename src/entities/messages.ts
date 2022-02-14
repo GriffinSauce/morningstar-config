@@ -2,6 +2,11 @@ import Toggle from "../types/Toggle"
 import Action from "../types/Action"
 import Type from "../types/Type"
 import Message from "../types/Message"
+import {
+  getSetToggleData,
+  TogglePosition,
+  ApplyToPresets,
+} from "./getSetToggleData"
 
 export const empty = (): Message => {
   return {
@@ -93,23 +98,19 @@ export const togglePreset = ({
 export const setToggle = ({
   action = Action.Press,
   toggle = Toggle.Both,
-  data1,
-  data2,
-  data3,
-  data4,
+  togglePosition,
+  applyToPresets,
 }: {
   action?: Action
   toggle?: Toggle
-  data1: number
-  data2: number
-  data3: number
-  data4: number
+  togglePosition: TogglePosition
+  applyToPresets: Partial<ApplyToPresets>
 }): Message => {
   return {
-    data1,
-    data2,
-    data3,
-    data4,
+    ...getSetToggleData({
+      togglePosition,
+      applyToPresets,
+    }),
     channel: 1,
     type: Type.SetToggle,
     action,
