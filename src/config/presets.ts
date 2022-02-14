@@ -129,9 +129,9 @@ const presets = {
     toToggle: true,
     messages: [
       setToggle({
-        // F & G off
-        data1: 64,
-        data2: 1,
+        // E & F off
+        data1: 96,
+        data2: 0,
         data3: 0,
         data4: 0,
       }),
@@ -165,9 +165,9 @@ const presets = {
     toToggle: true,
     messages: [
       setToggle({
-        // E & F off
-        data1: 96,
-        data2: 0,
+        // F & G off
+        data1: 64,
+        data2: 1,
         data3: 0,
         data4: 0,
       }),
