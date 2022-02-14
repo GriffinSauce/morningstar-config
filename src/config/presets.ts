@@ -8,7 +8,7 @@ import {
 } from "../entities/messages"
 import preset from "../entities/preset"
 
-import { ampChannels, hxStomp, loops } from "./messages"
+import { ampChannels, getLoopProgram, hxStomp, loops } from "./messages"
 import { TogglePosition } from "../entities/getSetToggleData"
 
 const toneBaseMessages = [
@@ -17,38 +17,6 @@ const toneBaseMessages = [
   togglePreset(),
   hxStomp.snap1,
 ]
-
-/**
- * Join loop settings to generate program number based on these masks;
- *
- * #   LP1 LP2
- * 1X  OFF OFF
- * 2X  ON  OFF
- * 3X  OFF ON
- * 4X  ON  ON
- *
- *  #  LP3 LP4
- * X1  OFF OFF
- * X2  ON  OFF
- * X3  OFF ON
- * X4  ON  ON
- */
-const getLoopProgram = ({
-  one = false,
-  two = false,
-  three = false,
-  four = false,
-}): number => {
-  let programX = 10
-  let programY = 1
-  if (one) programX = 20
-  if (two) programX = 30
-  if (one && two) programX = 40
-  if (three) programY = 2
-  if (four) programY = 3
-  if (three && four) programY = 4
-  return programX + programY
-}
 
 const disengageSnapToggles = setToggle({
   togglePosition: TogglePosition.DisEngageToggle,
@@ -59,6 +27,34 @@ const disengageSnapToggles = setToggle({
   },
 })
 
+const engageEQMessages = [
+  setToggle({
+    togglePosition: TogglePosition.EngageToggle,
+    applyToPresets: {
+      e: true,
+    },
+  }),
+  controlChange({
+    channel: 6,
+    number: 89,
+    value: getLoopProgram({ three: true }),
+  }),
+]
+
+const engageSD1Messages = [
+  setToggle({
+    togglePosition: TogglePosition.EngageToggle,
+    applyToPresets: {
+      g: true,
+    },
+  }),
+  controlChange({
+    channel: 6,
+    number: 89,
+    value: getLoopProgram({ one: true }),
+  }),
+]
+
 const presets = {
   clean: preset({
     name: "Clean",
@@ -66,11 +62,11 @@ const presets = {
   }),
   crunch: preset({
     name: "Crunch",
-    messages: [...toneBaseMessages, ampChannels.crunch],
+    messages: [...toneBaseMessages, ampChannels.crunch, ...engageEQMessages],
   }),
   rhythm: preset({
     name: "Rhythm",
-    messages: [...toneBaseMessages, ampChannels.rhythm],
+    messages: [...toneBaseMessages, ampChannels.rhythm, ...engageEQMessages],
   }),
   heavy: preset({
     name: "Heavy",
@@ -78,7 +74,7 @@ const presets = {
   }),
   lead: preset({
     name: "Lead",
-    messages: [...toneBaseMessages, ampChannels.lead1],
+    messages: [...toneBaseMessages, ampChannels.lead1, ...engageSD1Messages],
   }),
 
   crunchOct: preset({
