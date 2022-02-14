@@ -36,6 +36,7 @@ const basePresetToggles = Array(22)
     {},
   ) as ApplyToPresets
 
+// Copied from web editor & modified, no idea what this does or why
 const getData1 = ({ toggleList, togglePosition }: GetDataInput): number => {
   return (
     (+toggleList
@@ -50,6 +51,7 @@ const getData1 = ({ toggleList, togglePosition }: GetDataInput): number => {
   )
 }
 
+// Idem
 const getData2 = ({ toggleList }: GetDataInput): number => {
   return +toggleList
     .slice(6, 13)
@@ -58,6 +60,7 @@ const getData2 = ({ toggleList }: GetDataInput): number => {
     .reduce((e, n) => (+e << 1) | +n)
 }
 
+// Idem
 const getData3 = ({ toggleList, togglePosition }: GetDataInput): number => {
   return (
     (+toggleList[18] << 6) |
