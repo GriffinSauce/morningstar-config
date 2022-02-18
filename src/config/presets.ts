@@ -45,13 +45,13 @@ const engageSD1Messages = [
   setToggle({
     togglePosition: TogglePosition.EngageToggle,
     applyToPresets: {
-      g: true,
+      f: true,
     },
   }),
   controlChange({
     channel: 6,
     number: 89,
-    value: getLoopProgram({ one: true }),
+    value: getLoopProgram({ two: true }),
   }),
 ]
 
