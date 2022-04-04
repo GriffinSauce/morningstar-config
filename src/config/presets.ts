@@ -27,7 +27,7 @@ const disengageSnapToggles = setToggle({
   },
 })
 
-const engageEQMessages = [
+const engageSugarDriveMessages = [
   setToggle({
     togglePosition: TogglePosition.EngageToggle,
     applyToPresets: {
@@ -62,11 +62,19 @@ const presets = {
   }),
   crunch: preset({
     name: "Crunch",
-    messages: [...toneBaseMessages, ampChannels.crunch, ...engageEQMessages],
+    messages: [
+      ...toneBaseMessages,
+      ampChannels.crunch,
+      ...engageSugarDriveMessages,
+    ],
   }),
   rhythm: preset({
     name: "Rhythm",
-    messages: [...toneBaseMessages, ampChannels.rhythm, ...engageEQMessages],
+    messages: [
+      ...toneBaseMessages,
+      ampChannels.rhythm,
+      ...engageSugarDriveMessages,
+    ],
   }),
   heavy: preset({
     name: "Heavy",
@@ -108,8 +116,8 @@ const presets = {
     ],
   }),
 
-  stompGreenRhino: preset({
-    name: "TS",
+  stompHorseman: preset({
+    name: "Nux",
     toToggle: true,
     messages: [
       setToggle({
@@ -158,8 +166,8 @@ const presets = {
       }),
     ],
   }),
-  stompEQ: preset({
-    name: "EQ",
+  stompSugarDrive: preset({
+    name: "Sugar",
     toToggle: true,
     messages: [
       setToggle({
