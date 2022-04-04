@@ -10,9 +10,9 @@ import bank, { BankDefinition } from "../entities/bank"
 
 import presets from "./presets"
 import { ampChannels, hxStomp, loops } from "./messages"
+import Bank from "../types/Bank"
 
-const baseBank: BankDefinition = {
-  name: "CS Base",
+const baseBankProps: BankDefinition = {
   messages: [hxStomp.base],
   presets: {
     a: presets.clean,
@@ -29,27 +29,16 @@ const baseBank: BankDefinition = {
   },
 }
 
-const banks = [
-  bank(baseBank),
-  bank({
-    name: "CS: Yesterday",
-    base: baseBank,
-  }),
-  bank({
-    name: "CS: History",
-    base: baseBank,
-  }),
-  bank({
-    name: "CS: State of Denial",
-    base: baseBank,
-  }),
-  bank({
-    name: "CS: Alluring Sea",
-    base: baseBank,
-  }),
-  bank({
-    name: "CS Anchor",
-    base: baseBank,
+const baseBank = bank(baseBankProps)
+
+const banks: Record<string, ReturnType<typeof bank>> = {
+  ["CS: Base"]: baseBank,
+  ["CS: Yesterday"]: baseBank,
+  ["CS: History"]: baseBank,
+  ["CS: State of Denial"]: baseBank,
+  ["CS: Alluring Sea"]: baseBank,
+  ["CS: Anchor"]: bank({
+    base: baseBankProps,
     messages: [hxStomp.anchor],
     presets: {
       f: presets.crunchOct,
@@ -57,21 +46,12 @@ const banks = [
       h: presets.leadOct,
     },
   }),
-  bank({
-    name: "CS: Taking a Fall",
-    base: baseBank,
-  }),
-  bank({
-    name: "CS: On a Hold",
-    base: baseBank,
-  }),
-  bank({
-    name: "CS: Roam",
-    base: baseBank,
-  }),
-  bank({
-    name: "CS: I Lost Track",
-    base: baseBank,
+  ["CS: Monkeys"]: baseBank,
+  ["CS: Taking a Fall"]: baseBank,
+  ["CS: On a Hold"]: baseBank,
+  ["CS: Roam"]: baseBank,
+  ["CS: I Lost Track"]: bank({
+    base: baseBankProps,
     messages: [hxStomp.iLostTrack],
     presets: {
       a: preset({
@@ -86,13 +66,9 @@ const banks = [
       }),
     },
   }),
-  bank({
-    name: "CS: Anxiety",
-    base: baseBank,
-  }),
-  bank({
-    name: "CS This is not a drill",
-    base: baseBank,
+  ["CS: Anxiety"]: baseBank,
+  ["CS: This is not a drill"]: bank({
+    base: baseBankProps,
     messages: [hxStomp.notADrill],
     presets: {
       a: preset({
@@ -107,10 +83,36 @@ const banks = [
       }),
     },
   }),
+}
+
+const setList = [
+  "CS: Yesterday",
+  "CS: History",
+  "CS: State of Denial",
+  "CS: Alluring Sea",
+  "CS: Monkeys",
+  "CS: Anchor",
+  "CS: Taking a Fall",
+  "CS: On a Hold",
+  "CS: I Lost Track",
+  "CS: Anxiety",
+  "CS: Roam",
+  "CS: This is not a drill",
 ]
 
+const setBanks = setList.map((songName): Bank => {
+  const bank = banks[songName]
+
+  if (!bank) throw new Error(`No bank for ${songName}`)
+
+  return {
+    ...bank,
+    bankName: songName,
+  }
+})
+
 const data: Config["data"] = {
-  bankArray: addIndexes(padMessageLists(banks)),
+  bankArray: addIndexes(padMessageLists(setBanks)),
 }
 
 const config: Config = {

@@ -14,7 +14,6 @@ type Presets = Record<PresetKey, Preset>
 type ExpressionPresets = Record<ExpressionPresetKey, Preset>
 
 interface BankDefinitionBase {
-  name: string
   clearToggle?: boolean
   messages?: Message[]
   presets?: Partial<Presets>
@@ -25,7 +24,7 @@ export interface BankDefinition extends BankDefinitionBase {
   base?: BankDefinitionBase
 }
 
-const bank = (input: BankDefinition): Bank => {
+const bank = (input: BankDefinition): Omit<Bank, "bankName"> => {
   const { base } = input
 
   const merged = merge({}, base, input, {
@@ -38,7 +37,6 @@ const bank = (input: BankDefinition): Bank => {
   })
 
   const {
-    name,
     clearToggle = false,
     messages = [],
     presets = {},
@@ -46,7 +44,6 @@ const bank = (input: BankDefinition): Bank => {
   } = merged
 
   return {
-    bankName: name,
     bankClearToggle: clearToggle,
     bankMsgArray: messages,
     presetArray: Object.values(presets),
