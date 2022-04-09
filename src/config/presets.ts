@@ -37,7 +37,7 @@ const engageSugarDriveMessages = [
   controlChange({
     channel: 6,
     number: 89,
-    value: getLoopProgram({ three: true }),
+    value: getLoopProgram({ one: true }),
   }),
 ]
 
@@ -131,13 +131,13 @@ const presets = {
         toggle: Toggle.Pos1,
         channel: 6,
         number: 89,
-        value: getLoopProgram({ one: true }),
+        value: getLoopProgram({ three: true }),
       }),
       controlChange({
         toggle: Toggle.Pos2,
         channel: 6,
         number: 89,
-        value: getLoopProgram({ one: false }),
+        value: getLoopProgram({ three: false }),
       }),
     ],
   }),
@@ -181,13 +181,13 @@ const presets = {
         toggle: Toggle.Pos1,
         channel: 6,
         number: 89,
-        value: getLoopProgram({ three: true }),
+        value: getLoopProgram({ one: true }),
       }),
       controlChange({
         toggle: Toggle.Pos2,
         channel: 6,
         number: 89,
-        value: getLoopProgram({ three: false }),
+        value: getLoopProgram({ one: false }),
       }),
     ],
   }),
