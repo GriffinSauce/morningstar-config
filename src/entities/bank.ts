@@ -1,5 +1,3 @@
-import merge from "lodash/merge"
-
 import Bank from "../types/Bank"
 import Message from "../types/Message"
 import Preset from "../types/Preset"
@@ -27,14 +25,18 @@ export interface BankDefinition extends BankDefinitionBase {
 const bank = (input: BankDefinition): Omit<Bank, "bankName"> => {
   const { base } = input
 
-  const merged = merge({}, base, input, {
-    presets: merge({}, base?.presets, input.presets),
-    expressionPresets: merge(
-      {},
-      base?.expressionPresets,
-      input.expressionPresets,
-    ),
-  })
+  const merged = {
+    ...base,
+    ...input,
+    presets: {
+      ...base?.presets,
+      ...input.presets,
+    },
+    expressionPresets: {
+      ...base?.expressionPresets,
+      ...input.expressionPresets,
+    },
+  }
 
   const {
     clearToggle = false,

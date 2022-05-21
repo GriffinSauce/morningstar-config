@@ -1,9 +1,3 @@
-import addIndexes from "../utils/addIndexes"
-import generateDataHash from "../utils/generateDataHash"
-import padMessageLists from "../utils/padMessageLists"
-
-import Config from "../types/Config"
-
 import { togglePreset, clearGlobalPresetToggles } from "../entities/messages"
 import preset from "../entities/preset"
 import bank, { BankDefinition } from "../entities/bank"
@@ -31,7 +25,7 @@ const baseBankProps: BankDefinition = {
 
 const baseBank = bank(baseBankProps)
 
-const banks: Record<string, ReturnType<typeof bank>> = {
+const bankDefinitions: Record<string, ReturnType<typeof bank>> = {
   ["CS: Base"]: baseBank,
   ["CS: Yesterday"]: baseBank,
   ["CS: History"]: baseBank,
@@ -41,6 +35,7 @@ const banks: Record<string, ReturnType<typeof bank>> = {
     base: baseBankProps,
     messages: [hxStomp.anchor],
     presets: {
+      c: presets.rhythmSilent,
       f: presets.crunchOct,
       g: presets.rhythmOct,
       h: presets.leadOct,
@@ -100,28 +95,15 @@ const setList = [
   "CS: This is not a drill",
 ]
 
-const setBanks = setList.map((songName): Bank => {
-  const bank = banks[songName]
+const banks = setList.map((songName): Bank => {
+  const bank = bankDefinitions[songName]
 
   if (!bank) throw new Error(`No bank for ${songName}`)
 
   return {
     ...bank,
-    bankName: songName,
+    bankName: `TM:${songName}`,
   }
 })
 
-const data: Config["data"] = {
-  bankArray: addIndexes(padMessageLists(setBanks)),
-}
-
-const config: Config = {
-  schemaVersion: 1,
-  dumpType: "allBanks",
-  deviceModel: 4,
-  downloadDate: new Date().toISOString(),
-  hash: generateDataHash(data),
-  data,
-}
-
-export default config
+export default banks
