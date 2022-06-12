@@ -27,33 +27,29 @@ const disengageSnapToggles = setToggle({
   },
 })
 
-const engageSugarDriveMessages = [
-  setToggle({
-    togglePosition: TogglePosition.EngageToggle,
-    applyToPresets: {
-      e: true,
-    },
-  }),
-  controlChange({
-    channel: 6,
-    number: 89,
-    value: getLoopProgram({ one: true }),
-  }),
-]
+const engageSugarDrive = controlChange({
+  channel: 6,
+  number: 89,
+  value: getLoopProgram({ one: true }),
+})
+const toggleSugarDrive = setToggle({
+  togglePosition: TogglePosition.EngageToggle,
+  applyToPresets: {
+    e: true,
+  },
+})
 
-const engageSD1Messages = [
-  setToggle({
-    togglePosition: TogglePosition.EngageToggle,
-    applyToPresets: {
-      f: true,
-    },
-  }),
-  controlChange({
-    channel: 6,
-    number: 89,
-    value: getLoopProgram({ two: true }),
-  }),
-]
+const engageTS = controlChange({
+  channel: 6,
+  number: 89,
+  value: getLoopProgram({ two: true }),
+})
+const toggleTS = setToggle({
+  togglePosition: TogglePosition.EngageToggle,
+  applyToPresets: {
+    f: true,
+  },
+})
 
 const presets = {
   clean: preset({
@@ -65,7 +61,8 @@ const presets = {
     messages: [
       ...toneBaseMessages,
       ampChannels.crunch,
-      ...engageSugarDriveMessages,
+      engageSugarDrive,
+      toggleSugarDrive,
     ],
   }),
   rhythm: preset({
@@ -73,7 +70,8 @@ const presets = {
     messages: [
       ...toneBaseMessages,
       ampChannels.rhythm,
-      ...engageSugarDriveMessages,
+      engageSugarDrive,
+      toggleSugarDrive,
     ],
   }),
   heavy: preset({
@@ -82,7 +80,7 @@ const presets = {
   }),
   lead: preset({
     name: "Lead",
-    messages: [...toneBaseMessages, ampChannels.lead1, ...engageSD1Messages],
+    messages: [...toneBaseMessages, ampChannels.lead1, engageTS, toggleTS],
   }),
 
   crunchOct: preset({
@@ -113,6 +111,7 @@ const presets = {
       togglePreset(),
       ampChannels.lead1,
       hxStomp.snap3,
+      engageTS,
     ],
   }),
 
@@ -142,7 +141,7 @@ const presets = {
     ],
   }),
   stompSD1: preset({
-    name: "SD-1",
+    name: "TS",
     toToggle: true,
     messages: [
       setToggle({

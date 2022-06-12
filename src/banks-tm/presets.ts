@@ -39,12 +39,12 @@ const toggleSugarDrive = setToggle({
   },
 })
 
-const engageSD1 = controlChange({
+const engageTS = controlChange({
   channel: 6,
   number: 89,
   value: getLoopProgram({ two: true }),
 })
-const toggleSD1 = setToggle({
+const toggleTS = setToggle({
   togglePosition: TogglePosition.EngageToggle,
   applyToPresets: {
     f: true,
@@ -102,8 +102,8 @@ const presets = {
       togglePreset(),
       hxStomp.snap3,
       ampChannels.lead1,
-      engageSD1,
-      toggleSD1,
+      engageTS,
+      toggleTS,
     ],
   }),
 
@@ -143,7 +143,7 @@ const presets = {
       togglePreset(),
       ampChannels.lead1,
       hxStomp.snap3,
-      engageSD1,
+      engageTS,
     ],
   }),
 
@@ -173,7 +173,7 @@ const presets = {
     ],
   }),
   stompSD1: preset({
-    name: "SD-1",
+    name: "TS",
     toToggle: true,
     messages: [
       setToggle({

@@ -6,7 +6,7 @@ import banksTm from "./banks-tm"
 import banksRack from "./banks-rack"
 
 const data: Config["data"] = {
-  bankArray: addIndexes(padMessageLists([...banksTm, ...banksRack])),
+  bankArray: addIndexes(padMessageLists([...banksRack, ...banksTm])),
 }
 
 const config: Config = {
